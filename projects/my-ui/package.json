@@ -1,6 +1,6 @@
 {
   "name": "my-ui",
-  "version": "0.0.4",
+  "version": "0.0.1",
   "publishConfig": {
     "registry": "http://localhost:4873/"
   },

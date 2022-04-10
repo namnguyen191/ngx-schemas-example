@@ -4,7 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build-and-publish": "npm run build && npm run publish",
+    "build": "npm run build-library && npm run build-schematics",
+    "build-library": "ng build",
+    "build-schematics": "npm run build --prefix projects/my-ui",
+    "publish": "npm publish --prefix dist/my-ui",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
